@@ -1,0 +1,18 @@
+from abc import ABC, abstractmethod
+
+class Animal(ABC): #abstract class
+    @abstractmethod
+    def makeSound(self):
+        pass
+
+class Cow(Animal): # subclass Cow
+    def makeSound(self):
+        return "Moo!"
+
+class Pig(Animal): # subclass Pig
+    def makeSound(self):
+        return "Oink!"
+
+# Demonstrating polymorphism
+for animal in [Cow(), Pig()]:
+    print(animal.makeSound())
