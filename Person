@@ -1,0 +1,24 @@
+class Person:
+    def __init__(self, name, age, address):
+        self.name = name
+        self.age = age
+        self.address = address
+
+
+person = Person("khiana Real", 19, "35 prurok 2 Happy Hallow, Baguio City")
+
+
+print("Name:", person.name)
+print("Age:", person.age)
+print("Address:", person.address)
+
+
+person.name = "Abie moyaen"
+person.age = 20
+person.address = "conner, Apayao"
+
+
+print("\nUpdated Information:")
+print("Name:", person.name)
+print("Age:", person.age)
+print("Address:", person.address)
